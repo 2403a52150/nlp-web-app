@@ -9,7 +9,7 @@ from sklearn.naive_bayes import MultinomialNB
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
-# download resources
+nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
 
