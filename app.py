@@ -9,6 +9,16 @@ from sklearn.naive_bayes import MultinomialNB
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
+import nltk
+import os
+
+# Fix for Streamlit cloud nltk path
+nltk.data.path.append(os.path.join(os.getcwd(), "nltk_data"))
+
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('wordnet')
+
 nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
